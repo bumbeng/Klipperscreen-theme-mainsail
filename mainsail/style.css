@@ -1,0 +1,215 @@
+/* blurry-theme created by Sascha Buerger 2023 */
+@define-color color2 #e28633;
+@define-color color1 #8c0303;
+@define-color color3 #46786f;
+@define-color color4 #7aac65;
+@define-color bg #002b36;
+@define-color warning #f9a825;
+@define-color error #981E1F;
+@define-color text white;
+
+* {
+    background-color: transparent;
+
+}
+
+list row {
+    background-color: rgba(45, 36, 36, 0.6);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    
+}
+
+treeview.view {
+    background-color: rgba(45, 36, 36, 0.5);
+
+}
+
+window {
+    background-color: @bg;
+    background-image: url("./styles/mainsail/background.png");
+    background-size: cover;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0.5em;
+}
+
+button:active,
+.button_active,
+button.active {
+    background-color: rgba(45, 36, 36, 0.8);
+    border-radius: 0.75em;
+    border-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+button.color1 {
+    background-color: rgba(45, 36, 36, 0.8);                           
+    border-bottom-color: @color1;
+    border-radius: 1em;
+}
+
+button.color2 {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-bottom-color: @color2;
+    border-radius: 1em;
+}
+
+button.color3 {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-bottom-color: @color3;
+    border-radius: 1em;
+}
+
+button.color4 {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-bottom-color: @color4;
+    border-radius: 1em;
+}
+
+button.update {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border: 0;
+    border-bottom: .3em solid;
+    border-bottom-color: @color4;
+    border-radius: .75em;
+}
+
+button.invalid {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border: 0;
+    border-bottom: .3em solid;
+    border-bottom-color: @error;
+    border-radius: .75em;
+}
+
+combobox button,
+combobox box button {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-color: transparent;
+    border: 0;
+    border-radius: 0.75em;
+}
+
+menu,
+popover,
+popover button,
+combobox arrow,
+menuitem,
+combobox menuitem {
+    background-color: transparent;
+    border: 0;
+}
+
+combobox window.popup {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 50px;
+}
+
+treeview.view check,
+switch {
+    background-color: rgba(45, 36, 36, 0.8);  
+}
+
+treeview.view check:checked,
+switch:checked {
+    background-color: rgba(140, 3, 3, 0.65);
+}
+
+entry {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border: none;
+    margin-bottom: 0.5em;
+}
+
+menu {
+    border: 0.2em solid;
+    border-color: rgba(45, 36, 36, 0.8);
+}
+
+trough {
+    background-color: rgba(45, 36, 36, 0.8);  
+    color: @text;
+    border: none;
+    border-radius: 1em;
+}
+
+trough highlight,
+trough progress {
+    background-color: rgba(140, 3, 3, 0.65);
+    border: none;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+trough progress.left {
+    border: 2px;
+}
+
+scrollbar, scrollbar button, scrollbar trough {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: rgba(217, 217, 217, 0.526);
+}
+
+.dialog {
+    border: @bg;
+    background-color: transparent;
+}
+
+.dialog button {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-bottom-color: @color3;
+    border-radius: .75em;
+}
+
+.horizontal_togglebuttons {
+    border: none;
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-radius: 0.75em;
+    margin-right: 5px;
+}
+
+.horizontal_togglebuttons_active {
+    background-color: rgba(140, 3, 3, 0.5);
+}
+
+.numpad_tleft,
+.numpad_top,
+.numpad_tright,
+.numpad_left,
+.numpad_button,
+.numpad_right,
+.numpad_bleft,
+.numpad_bottom,
+.numpad_bright {
+    border-color: transparent;
+    background-color: rgba(45, 36, 36, 0.8);  
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+}
+
+.warning {
+    background-color: @color1;
+}
+
+.keyboard_pad {
+    background-color: rgba(45, 36, 36, 0.8);  
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+}
+.graph_label {
+    background-color: rgba(45, 36, 36, 0.8);  
+    border-left-width: 4px; 
+    border-left-style: solid;
+    border-radius: 0.75em;
+}
